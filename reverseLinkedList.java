@@ -1,7 +1,7 @@
 //Java Program to reverse a Linked List
 package st2;
 import java.util.*;
-public class reverse 
+public class reverseLinkedList
 {
 	static Node head;
 	static class Node
