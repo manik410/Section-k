@@ -1,7 +1,9 @@
+//Write a Java Program to create a Binary Search Tree
 package tree;
 import java.util.Scanner;
 public class binarySearchTree
 {
+	//creating node of binary search tree
 	class Node
 	{
 		int data;
@@ -29,6 +31,8 @@ public class binarySearchTree
 		{
 			return;
 		}
+		//if node is greater than the current node move it towards right of the current node and if right of current node is
+		//null make it its right node
 			if(x>c.data)
 			{
 				insert(c.right,x);
@@ -46,6 +50,8 @@ public class binarySearchTree
 				}
 			}
 	}
+	//printing the inorder of binary search tree
+	//it will be in ascending order always
 	public void print(Node c)
 	{
 		if(c==null)
