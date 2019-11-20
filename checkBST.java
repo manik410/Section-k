@@ -1,3 +1,4 @@
+//Write a program to check if a given binary tree is BST or not
 package questionsK;
 import java.util.*;
 public class checkBST 
