@@ -1,3 +1,4 @@
+//Write a Java Program to implement stack using two queues
 package questionsK;
 import java.util.*;
 class stackUsingQueue 
