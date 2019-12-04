@@ -1,18 +1,16 @@
-package queueprograms;
+//Write a Java program to implement a queue using 2 stacks
+package questionsK;
 import java.util.*;
 public class queueUsingStack 
 {
-	public static void main(String args[])
+	Stack<Integer> s=new Stack<Integer>();
+	Stack<Integer> s1=new Stack<Integer>();
+	void input(int d)
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the size of the stack");
-		int size=sc.nextInt();
-		Stack<Integer> s=new Stack<Integer>();
-		Stack<Integer> s1=new Stack<Integer>();
-		for(int i=0;i<size;i++)
-		{
-			s.push(sc.nextInt());
-		}
+		s.push(d);
+	}
+	void print()
+	{
 		while(!s.isEmpty())
 		{
 			s1.push(s.pop());
@@ -21,6 +19,18 @@ public class queueUsingStack
 		{
 			System.out.print(s1.pop()+" ");
 		}
+	}
+	public static void main(String args[])
+	{
+		queueUsingStack q=new queueUsingStack();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size");
+		int size=sc.nextInt();
+		for(int i=0;i<size;i++)
+		{
+			q.input(sc.nextInt());
+		}
+		q.print();
 	}
 
 }
