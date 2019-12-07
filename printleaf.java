@@ -1,3 +1,4 @@
+//Write a Java program to print all the leaf nodes of a Binary tree
 package questionsK;
 import java.util.*;
 public class printleaf 
